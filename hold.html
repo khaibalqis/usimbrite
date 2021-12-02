@@ -1,0 +1,61 @@
+<form action="actionOrganizer.php" method="post" enctype="multipart/form-data">
+                    
+    <div class="form-group">
+        <label for='poster'><b>Add your Poster:</b></label> <br>
+        <input id='poster' class="form-control" name="poster" type="file" multiple="multiple">
+    </div>
+
+    <div class="form-group">
+        <label for="series_no"><b> Series No. :</b> </label>
+        <input class="form-control" type="text"  name="series_no" placeholder="Fill in the series number of program"required>
+    </div>
+
+
+    <div class="form-group">
+        <label for="category"><b>Category :</b> </label>
+        <select class="form-control" name="category" required>
+            <option value="" selected disabled>Choose your Category</option>
+            <option value="sport">SPORT</option>
+            <option value="volunteer">VOLUNTEER</option>
+            <option value="leadership">LEADERSHIP</option>
+            <option value="innovation">INNOVATION</option>
+            <option value="art">ART AND CULTURE</option>
+            <option value="entre">ENTREPRENEURSHIP</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="organization"><b> Organization :</b> </label>
+        <input class="form-control" type="text"  name="organization" placeholder="Organization"required>
+    </div>
+
+    <div class="form-group">
+        <label for='event_name'><b> Event name:</b></label> <br>
+        <input class="form-control" name="event_name" type="text" placeholder="Event Name"required>
+    </div>
+
+    <div class="form-group">
+        <label for='venue'><b> Venue:</b></label> <br>
+        <input class="form-control" name="venue" type="text" placeholder="Venue"required>
+    </div>
+
+    <div class="form-group">
+        <label for='date'><b> Date:</b></label> <br>
+        <input class="form-control" name="date" type="date" placeholder="Date"required>
+    </div>
+
+    <div class="form-group">
+        <label for='time'><b> Time:</b></label> <br>
+        <input class="form-control" name="time" type="time" placeholder="time"required>
+    </div>
+
+   
+
+    <input class="btn btn-primary btn-block text-white" type="submit" name="save" value="Save">
+
+    <br>
+
+    <input class="btn btn-primary btn-block text-white" type="submit" name="btnCancel" value="Cancel">
+
+</form>
